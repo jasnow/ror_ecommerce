@@ -248,7 +248,7 @@ class Product < ActiveRecord::Base
 end
 
 ## If you want to use SOLR search uncomment the following:
-=begin
+## =begin
     Product.class_eval do
       searchable do
         text    :name, :default_boost => 2
@@ -268,4 +268,4 @@ end
           end
       end
     end
-=end
+## =end

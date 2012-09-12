@@ -57,17 +57,16 @@ Hadean::Application.configure do
 
   # If you have no front-end server that supports something like X-Sendfile,
   # just comment this out and Rails will serve the files
-  config.cache_store = :memory_store
-  #config.cache_store = :dalli_store
+  #config.cache_store = :memory_store
+  config.cache_store = :dalli_store
+  # Use a different cache store in production
+  #config.cache_store = :mem_cache_store
 
   # See everything in the log (default is :info)
   # config.log_level = :debug
 
   # Use a different logger for distributed setups
   # config.logger = SyslogLogger.new
-
-  # Use a different cache store in production
-  # config.cache_store = :mem_cache_store
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this

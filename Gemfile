@@ -16,7 +16,7 @@ gem 'cancan', '~> 1.6.7'
 gem 'compass', '~> 0.12.rc.0'
 gem 'compass-rails'
 # gem 'compass_twitter_bootstrap'
-#  gem 'dalli', '~> 1.0.2'
+gem 'dalli', '~> 1.0.2'
 
 gem "friendly_id", "~> 3.3"
 gem 'haml',  ">= 3.0.13"#, ">= 3.0.4"#, "2.2.21"#,
@@ -34,12 +34,12 @@ gem 'paperclip', '~> 2.4.5'
 gem 'prawn', '~> 0.12.0'
 
 gem "rails3-generators", :git => "https://github.com/neocoin/rails3-generators.git"
-gem 'rmagick',    :require => 'RMagick'
+gem 'rmagick', :require => 'RMagick'
 
 gem 'rake', '~> 0.9.2'
 gem 'state_machine', '~> 1.1.2'
-#gem 'sunspot_solr'
-#gem 'sunspot_rails', '~> 1.3.0rc'
+gem 'sunspot_solr'
+gem 'sunspot_rails', '~> 1.3.0rc'
 gem 'will_paginate', '~> 3.0.0'
 gem 'dynamic_form'
 

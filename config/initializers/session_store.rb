@@ -1,4 +1,4 @@
-Hadean::Application.config.session_store :cookie_store, :key => '_ror_ecommerce_session_pIUHGFhsgbhsvgfshbdhgh456jb3hhy387u'
+#REMOVE FOR DALLI: Hadean::Application.config.session_store :cookie_store, :key => '_ror_ecommerce_session_pIUHGFhsgbhsvgfshbdhgh456jb3hhy387u'
 
 puts '
 ************************************************
@@ -10,8 +10,8 @@ puts '
 #   go to the Gemfile and add "gem 'dalli'"
 #   bundle install
 ##  Last UNCOMMENT the next 2 lines
-# require 'action_dispatch/middleware/session/dalli_store'
-# Hadean::Application.config.session_store :dalli_store, :key => '_hadean_session_ugrdr6765745ce4vy'
+require 'action_dispatch/middleware/session/dalli_store'
+Hadean::Application.config.session_store :dalli_store, :key => '_hadean_session_ugrdr6765745ce4vy'
 #
 #  it is also recommended to change the cache store in config/environments/*.rb
 #   config.cache_store = :dalli_store
